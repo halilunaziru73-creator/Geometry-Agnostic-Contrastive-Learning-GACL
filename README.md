@@ -18,6 +18,7 @@ empirical baseline against which the full GACL architecture can be assessed.
 ## Contents
 
 - `paper/Naziru_Sulaiman_GACL_Architecture.docx` — the complete manuscript.
+- `figures/` — all 12 manuscript figures, extracted directly from the manuscript.
 - `code/` — the GACL reference implementation:
   - `gacl/` — the four architectural components (`hgavit.py`, `gcatt.py`,
     `dhgnn.py`, `vlae.py`), the composite loss (`losses.py`), and the model
@@ -31,32 +32,59 @@ empirical baseline against which the full GACL architecture can be assessed.
   used for the classical-baseline diagnostics.
 - `image_experiment/` — the real, reproducible classifier evaluation on real field
   photographs, and its outputs.
-- `reproduce/` — standalone scripts that regenerate every figure in `image_experiment/`
-  from `data/GACL_Data.xlsx`.
+- `reproduce/` — standalone scripts that regenerate the analytic and empirical
+  figures from `data/GACL_Data.xlsx`.
 - `colab/` — a Colab notebook and instructions for training GACL in a hosted GPU
   environment.
 
 ## Figures
 
-Three figures accompany the manuscript's baseline evaluation, located in
-`image_experiment/`:
+All 12 figures from the manuscript:
 
-![Geometry invariance schematic](image_experiment/fig_geometry_invariance_schematic.png)
+![GACL architecture](figures/Figure_01_GACL_architecture.png)
+**Figure 1** — Architecture of the implemented GACL framework and its relationship
+to the classical pipeline.
+
+![Geometry invariance schematic](figures/Figure_02_geometry_invariance_schematic.png)
 **Figure 2** — Schematic illustration of GACL's geometry-invariance concept.
 
-![Real classifier comparison](image_experiment/fig_real_classifier_comparison.png)
-**Figure 8** — Performance comparison of classical classifiers (KNN, Logistic
-Regression, Random Forest, Gradient Boosting, SVM, MLP) trained on real
-hand-crafted image features extracted from field photographs.
+![Composite training objective flow](figures/Figure_03_composite_training_objective_flow.png)
+**Figure 3** — GACL composite training objective: component-to-loss data flow.
 
-![Real confusion matrix](image_experiment/fig_real_confusion_matrix.png)
-**Figure 9** — Confusion matrix for the best-performing classifier on the
-held-out real test split.
+![Gradient flow diagram](figures/Figure_04_gradient_flow_diagram.png)
+**Figure 4** — Schematic information/gradient flow diagram through the four GACL
+components and the composite objective.
 
-The remaining manuscript figures (architectural and analytic diagrams, ROC curves,
-permutation-importance, and PCA projections) are embedded directly in the
-manuscript and can be regenerated from `data/GACL_Data.xlsx` using the scripts in
-`reproduce/`.
+![HGAViT attention cost analysis](figures/Figure_05_HGAViT_attention_cost_analysis.png)
+**Figure 5** — Analytic HGAViT self-attention cost as a function of input image
+side length and patch size.
+
+![Random Forest accuracy and F1](figures/Figure_06_randomforest_accuracy_f1.png)
+**Figure 6** — Random Forest test accuracy and macro F1 across four feature
+subsets, against the five-class chance level.
+
+![Confusion matrix and feature importance](figures/Figure_07_confusion_matrix_feature_importance.png)
+**Figure 7** — Confusion matrix and Random Forest feature-group importance.
+
+![Classifier performance comparison](figures/Figure_08_classifier_performance_comparison.png)
+**Figure 8** — Classifier performance (accuracy, balanced accuracy, macro F1) on
+the held-out test split of six classical models trained on real photographs.
+
+![Confusion matrix, best classifier](figures/Figure_09_confusion_matrix_best_classifier.png)
+**Figure 9** — Confusion matrix for the best-performing classifier
+(single-hidden-layer MLP) on the held-out real test split.
+
+![ROC curves](figures/Figure_10_ROC_curves.png)
+**Figure 10** — One-vs-rest ROC curves (Random Forest, held-out test split) for
+all five pathology classes.
+
+![Permutation feature importance](figures/Figure_11_permutation_feature_importance.png)
+**Figure 11** — Permutation feature importance for the top 15 features, Random
+Forest.
+
+![PCA projection](figures/Figure_12_PCA_projection.png)
+**Figure 12** — PCA projection of the precomputed embedding and latent columns,
+coloured by pathology label.
 
 ## Reproducing the figures
 
