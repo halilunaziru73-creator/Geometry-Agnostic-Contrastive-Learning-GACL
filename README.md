@@ -86,7 +86,25 @@ Forest.
 **Figure 12** — PCA projection of the precomputed embedding and latent columns,
 coloured by pathology label.
 
-## Reproducing the figures
+## How to Run the Code
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/halilunaziru73-creator/Geometry-Agnostic-Contrastive-Learning-GACL.git
+cd Geometry-Agnostic-Contrastive-Learning-GACL
+```
+
+### 2. Install dependencies
+
+Requires: `pandas`, `numpy`, `scikit-learn`, `matplotlib`, `openpyxl`, `joblib`
+(see `code/requirements.txt`).
+
+```bash
+pip install -r code/requirements.txt
+```
+
+### 3. Reproducing the figures
 
 ```bash
 cd code   # so that data/GACL_Data.xlsx paths resolve
@@ -97,9 +115,6 @@ python3 ../reproduce/gen_p1_d.py            # analytic complexity curve
 python3 ../reproduce/gen_p1_e.py            # permutation importance
 python3 ../reproduce/gen_schematics_p1_p2.py  # architectural schematics
 ```
-
-Requires: `pandas`, `numpy`, `scikit-learn`, `matplotlib`, `openpyxl`, `joblib`
-(see `code/requirements.txt`).
 
 ## Evaluation summary
 
