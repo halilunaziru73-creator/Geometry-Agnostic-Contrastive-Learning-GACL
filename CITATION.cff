@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "Geometry-Agnostic Contrastive Learning (GACL): A Theoretical Framework and Baseline Evaluation Protocol for Agronomic Imaging"
+authors:
+  - family-names: Halilu
+    given-names: Naziru
+repository-code: "https://github.com/halilunaziru73-creator/Geometry-Agnostic-Contrastive-Learning-GACL"
+license: MIT
+date-released: "2026-08-02"
+keywords:
+  - machine learning
+  - computer vision
+  - contrastive learning
+  - agronomy
+  - precision agriculture
