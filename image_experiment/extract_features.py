@@ -100,7 +100,7 @@ def build_dataset(data_root):
 
 if __name__ == "__main__":
     import sys, pickle
-    data_root = sys.argv[1] if len(sys.argv) > 1 else "/home/claude/work/My_Data"
+    data_root = sys.argv[1] if len(sys.argv) > 1 else "./My_Data"
     data, path_to_idx, records = build_dataset(data_root)
     with open("real_image_features.pkl", "wb") as f:
         pickle.dump({"data": data, "path_to_idx": path_to_idx, "n_records": len(records)}, f)
