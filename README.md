@@ -6,6 +6,8 @@
 **Author:** Naziru Halilu
 
 
+![Graphical Abstract](graphical_abstract.png)
+
 ## Problem, Methodology, and Results
 
 **Problem.** No unified, mathematically rigorous framework exists for geometry-invariant, cross-pathology representation transfer in agronomic imaging — a gap that limits reliable transfer of learned features across different crop diseases and imaging geometries.
