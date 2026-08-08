@@ -5,6 +5,15 @@
 
 **Author:** Naziru Halilu
 
+
+## Problem, Methodology, and Results
+
+**Problem.** No unified, mathematically rigorous framework exists for geometry-invariant, cross-pathology representation transfer in agronomic imaging — a gap that limits reliable transfer of learned features across different crop diseases and imaging geometries.
+
+**Methodology.** Geometry Agnostic Contrastive Learning (GACL) unifies four architectural components into a single geometry-invariant learning objective: a Hierarchical Geometry Agnostic Vision Transformer (HGAViT), a Geometry Aware Cross Attention Transfer Transformer (GCATT), a Dynamic Hypergraph Neural Network (DHGNN), and a Variational Latent Agronomic Environment (VLAE), with full mathematical formalization and an open-source, code-complete reference implementation. Alongside this, a rigorous empirical baseline protocol was established on 1,543 real, unique crop-disease photographs across five crops and 19 pathology classes, using colour, vegetation-index, GLCM texture, and edge features on a held-out, leakage-aware, class-stratified split.
+
+**Results.** Six classical classifiers substantially exceeded the 5.3% chance level, with the best model (a single-hidden-layer MLP) reaching 64.4% raw accuracy, 38.1% balanced accuracy, macro-F1 of 0.378, Cohen's κ of 0.563, and macro ROC-AUC of 0.882. This defines the concrete, reproducible baseline against which GACL's four learned components — already implemented and specified in full — will be benchmarked once trained.
+
 ## Overview
 
 This repository contains the manuscript, reference implementation, reference
