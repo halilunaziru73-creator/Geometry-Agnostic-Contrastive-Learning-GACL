@@ -60,7 +60,7 @@
   <p class="metric">64.4% accuracy vs 5.3% chance level</p>
   <div class="card">
     <p class="sim-label">Graphical abstract</p>
-    <img class="figure" src="../graphical_abstract.png" alt="Graphical abstract for GACL Framework">
+    <img class="figure" src="graphical_abstract.png" alt="Graphical abstract for GACL Framework">
     <p class="sim-label">Process simulation</p>
     <svg id="sim" viewBox="0 0 680 100" role="img" aria-label="Animated process simulation">
       <line x1="40" y1="55" x2="640" y2="55" stroke="var(--node)" stroke-width="1"/>
@@ -87,7 +87,7 @@
     <button class="ask-btn" id="ask-btn" onclick="sendQuestion()">Send question</button>
     <p class="ask-status" id="ask-status"></p>
   </div>
-  <a class="back" href="../README.md">&larr; Back to README</a>
+  <a class="back" href="https://github.com/halilunaziru73-creator/Geometry-Agnostic-Contrastive-Learning-GACL">&larr; Back to GitHub repository</a>
 </div>
 <script>
 async function sendQuestion() {
@@ -133,7 +133,7 @@ async function sendQuestion() {
 }
 </script>
 <script>
-const steps = [{"t": "Geometry-invariant objective", "img": "../figures/Figure_02_geometry_invariance_schematic.png", "d": "Most vision models quietly assume every photo is framed the same way \u2014 GACL's training objective is derived mathematically so it stays valid whether the camera is a phone, a drone, or a microscope, without retraining for each geometry."}, {"t": "4 components", "img": "../figures/Figure_01_GACL_architecture.png", "d": "HGAViT, GCATT, DHGNN and VLAE each bring a different mathematical mechanism to the table \u2014 hierarchical attention, cross-geometry transfer, hypergraph reasoning over irregular relationships, and a variational latent environment \u2014 unified into one composite loss."}, {"t": "Reference implementation", "img": "../figures/Figure_03_composite_training_objective_flow.png", "d": "Every equation in the paper (\u03bb\u2081\u2013\u03bb\u2085, \u03b2, \u03b3 weighted loss terms) traces directly to a runnable function in the open-source code \u2014 no equation is left as an untestable promise."}, {"t": "1,543-image baseline", "img": "../figures/Figure_12_PCA_projection.png", "d": "Before claiming any credit for GACL itself, we asked the harder, more honest question first on real crop-disease photographs: does a simple classifier even find real signal in this data at all? We reported the answer plainly, including the null result on synthetic data."}, {"t": "Classifier benchmark", "img": "../figures/Figure_08_classifier_performance_comparison.png", "d": "Six classical classifiers were run head-to-head on colour, vegetation-index, GLCM texture and edge features \u2014 the best model (a single-hidden-layer MLP) hit 64.4% accuracy against a 5.3% chance floor, a real, unglamorous baseline for GACL's learned components to beat."}, {"t": "Reproducible baseline", "img": "../figures/Figure_10_ROC_curves.png", "d": "ROC curves for every classifier are published alongside macro-F1 and Cohen's \u03ba \u2014 this is deliberately not a victory-lap paper, it's the honest scaffolding future GACL training results will be judged against."}];
+const steps = [{"t": "Geometry-invariant objective", "img": "figures/Figure_02_geometry_invariance_schematic.png", "d": "Most vision models quietly assume every photo is framed the same way \u2014 GACL's training objective is derived mathematically so it stays valid whether the camera is a phone, a drone, or a microscope, without retraining for each geometry."}, {"t": "4 components", "img": "figures/Figure_01_GACL_architecture.png", "d": "HGAViT, GCATT, DHGNN and VLAE each bring a different mathematical mechanism to the table \u2014 hierarchical attention, cross-geometry transfer, hypergraph reasoning over irregular relationships, and a variational latent environment \u2014 unified into one composite loss."}, {"t": "Reference implementation", "img": "figures/Figure_03_composite_training_objective_flow.png", "d": "Every equation in the paper (\u03bb\u2081\u2013\u03bb\u2085, \u03b2, \u03b3 weighted loss terms) traces directly to a runnable function in the open-source code \u2014 no equation is left as an untestable promise."}, {"t": "1,543-image baseline", "img": "figures/Figure_12_PCA_projection.png", "d": "Before claiming any credit for GACL itself, we asked the harder, more honest question first on real crop-disease photographs: does a simple classifier even find real signal in this data at all? We reported the answer plainly, including the null result on synthetic data."}, {"t": "Classifier benchmark", "img": "figures/Figure_08_classifier_performance_comparison.png", "d": "Six classical classifiers were run head-to-head on colour, vegetation-index, GLCM texture and edge features \u2014 the best model (a single-hidden-layer MLP) hit 64.4% accuracy against a 5.3% chance floor, a real, unglamorous baseline for GACL's learned components to beat."}, {"t": "Reproducible baseline", "img": "figures/Figure_10_ROC_curves.png", "d": "ROC curves for every classifier are published alongside macro-F1 and Cohen's \u03ba \u2014 this is deliberately not a victory-lap paper, it's the honest scaffolding future GACL training results will be judged against."}];
 let idx = 0;
 let timer = null;
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
