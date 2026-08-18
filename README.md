@@ -6,13 +6,13 @@
 **Author:** Naziru Halilu
 
 
+## Problem, Methodology, and Results
+
 **Workflow sketch**
 
 ![Workflow Sketch](workflow_sketch.png)
 
 [View interactive graphical abstract →](https://halilunaziru73-creator.github.io/Geometry-Agnostic-Contrastive-Learning-GACL/)
-
-## Problem, Methodology, and Results
 
 **Problem.** No unified, mathematically rigorous framework exists for geometry-invariant, cross-pathology representation transfer in agronomic imaging — a gap that limits reliable transfer of learned features across different crop diseases and imaging geometries.
 
